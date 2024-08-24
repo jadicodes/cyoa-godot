@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Act" load_steps=2 format=3 uid="uid://c1puc11atrx6d"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_5hqun"]
+
+[resource]
+script = ExtResource("1_5hqun")
+text = "I bet you're wondering why you're here."

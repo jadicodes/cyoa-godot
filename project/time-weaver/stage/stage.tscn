@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpskunpy87oqm"]
+[gd_scene load_steps=4 format=3 uid="uid://bpskunpy87oqm"]
 
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_0wtrj"]
 [ext_resource type="PackedScene" uid="uid://clpbk8ntdtq1v" path="res://stage/textbox.tscn" id="1_axqlg"]
+[ext_resource type="Resource" uid="uid://c1puc11atrx6d" path="res://acts/prologue/office_intro.tres" id="2_qbxtf"]
 
 [node name="Stage" type="Control"]
 layout_mode = 3
@@ -9,6 +11,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0wtrj")
+_act = ExtResource("2_qbxtf")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -19,4 +23,11 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.160784, 0.117647, 0.101961, 1)
 
+[node name="Picture" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Textbox" parent="." instance=ExtResource("1_axqlg")]
+unique_name_in_owner = true
