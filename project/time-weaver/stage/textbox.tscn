@@ -7,11 +7,12 @@ bg_color = Color(0.831373, 0.827451, 0.819608, 1)
 bg_color = Color(0.160784, 0.117647, 0.101961, 1)
 
 [node name="Textbox" type="PanelContainer"]
+custom_minimum_size = Vector2(320, 108)
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -110.0
+offset_top = -100.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_s3dr8")
