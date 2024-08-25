@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Act" load_steps=2 format=3 uid="uid://c58eyjxg5ek0"]
-
-[ext_resource type="Script" path="res://acts/act.gd" id="1_fwv41"]
-
-[resource]
-script = ExtResource("1_fwv41")
-text_queue = Array[String](["You exit the bathroom. To your left is a living room. To your right is a kitchen."])
-option_titles = Array[String]([])
-options = Array[ExtResource("1_fwv41")]([])

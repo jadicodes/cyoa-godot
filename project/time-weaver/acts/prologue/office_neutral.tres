@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://b3iahtmgdbal4"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_7g1xb"]
-[ext_resource type="Resource" uid="uid://c58eyjxg5ek0" path="res://acts/chapter1/exit_the_bathroom.tres" id="1_qb3ld"]
+[ext_resource type="Resource" uid="uid://c58eyjxg5ek0" path="res://acts/level0/exit_the_bathroom.tres" id="1_qb3ld"]
 
 [resource]
 script = ExtResource("1_7g1xb")

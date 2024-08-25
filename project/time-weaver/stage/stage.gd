@@ -47,7 +47,7 @@ func _set_options_properties() -> void:
 	_options.show()
 
 
-func _set_options():
+func _set_options() -> void:
 	for index in _act.option_titles.size():
 		_options.create_new_button(_act.options[index], _act.option_titles[index])
 

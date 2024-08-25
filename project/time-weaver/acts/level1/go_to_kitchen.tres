@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Act" load_steps=2 format=3 uid="uid://u4ito02bj82m"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_u4r4n"]
+
+[resource]
+script = ExtResource("1_u4r4n")
+text_queue = Array[String](["Your friends Pranav and Sam are in the kitchen. Pranav is shaking a cocktail shaker. Sam is talking about his new job.", "\"Welcome back, took you long enough,\" Pranav says to you, interrupting Sam. The cocktail shaker top pops off and Pranav spills the drink all over himself."])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_u4r4n")]([])
