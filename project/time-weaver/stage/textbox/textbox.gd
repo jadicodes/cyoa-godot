@@ -75,6 +75,6 @@ func _change_state(new_state) -> void:
 		state.READY:
 			_text.visible_ratio = 0.0
 		state.READING:
-			pass
+			_end_symbol.text = " "
 		state.FINISHED:
 			pass
