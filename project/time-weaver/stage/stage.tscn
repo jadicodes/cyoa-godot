@@ -31,3 +31,5 @@ offset_bottom = 40.0
 
 [node name="Textbox" parent="." instance=ExtResource("1_axqlg")]
 unique_name_in_owner = true
+
+[connection signal="finished_current_text" from="Textbox" to="." method="_on_textbox_finished_current_text"]

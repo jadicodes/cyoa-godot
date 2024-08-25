@@ -1,6 +1,8 @@
 extends CanvasLayer
 
-const CHAR_READ_RATE = 0.06
+signal finished_current_text
+
+const CHAR_READ_RATE = 0.07
 
 enum state {
 	READY,
@@ -9,6 +11,8 @@ enum state {
 }
 
 var current_state = state.READY
+var _queue: int
+var current_queue_index: int = 0
 
 @onready var _textbox = %TextboxContainer
 @onready var _start_symbol = %StartSymbol
@@ -19,7 +23,19 @@ var current_state = state.READY
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("select") and current_state == state.FINISHED:
 		_change_state(state.READY)
-		hide_textbox()
+		current_queue_index += 1
+		if current_queue_index <= _queue - 1:
+			finished_current_text.emit()
+		else:
+			hide_textbox()
+
+
+func get_queue_index() -> int:
+	return current_queue_index
+
+
+func set_queue(total_strings):
+	_queue = total_strings
 
 
 func show_textbox() -> void:
@@ -50,7 +66,7 @@ func _change_state(new_state):
 	current_state = new_state
 	match current_state:
 		state.READY:
-			print("Changing state to READY")
+			_text.visible_ratio = 0.0
 		state.READING:
 			print("Changing state to READING")
 		state.FINISHED:

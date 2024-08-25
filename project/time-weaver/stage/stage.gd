@@ -13,6 +13,7 @@ func _ready() -> void:
 
 func _set_properties() -> void:
 	_set_picture()
+	_set_text_queue()
 	_set_text()
 
 
@@ -21,6 +22,14 @@ func _set_picture() -> void:
 		_picture.texture = _act.picture
 
 
+func _set_text_queue():
+	_textbox.set_queue(_act.get_array_size())
+	
+
 func _set_text() -> void:
-	if _act.text != null:
-		_textbox.set_text(_act.text)
+	if _act.text_queue != null:
+		_textbox.set_text(_act.text_queue[_textbox.get_queue_index()])
+
+
+func _on_textbox_finished_current_text() -> void:
+	_set_text()

@@ -4,5 +4,4 @@
 
 [resource]
 script = ExtResource("1_5hqun")
-text = "I bet you're wondering why you're here."
-text_queue = Array[String](["You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder."])
+text_queue = Array[String](["I bet you're wondering why you're here.", "You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder.", "Yes, selves. There is one of you in every parallel universe. One of you witnessed a murder. We need to figure out who... and why... and how it happened."])
