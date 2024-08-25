@@ -3,7 +3,7 @@ extends CanvasLayer
 signal finished_current_text
 signal finished_all_text
 
-const CHAR_READ_RATE = 0.005
+const CHAR_READ_RATE = 0.03
 
 enum state {
 	READY,
@@ -65,7 +65,6 @@ func set_text(text) -> void:
 
 
 func _on_tween_finished() -> void:
-	_end_symbol.text = "*"
 	_change_state(state.FINISHED)
 
 
@@ -77,4 +76,4 @@ func _change_state(new_state) -> void:
 		state.READING:
 			_end_symbol.text = " "
 		state.FINISHED:
-			pass
+			_end_symbol.text = "*"
