@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmpwic05p6bwj"]
+
+[ext_resource type="Script" path="res://common/custom_button/custom_button.gd" id="1_i0o2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjlg6"]
+bg_color = Color(0.160784, 0.117647, 0.101961, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.831373, 0.827451, 0.819608, 1)
+
+[node name="CustomButton" type="Button"]
+custom_minimum_size = Vector2(200, 84)
+theme_override_colors/font_color = Color(0.831373, 0.827451, 0.819608, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_jjlg6")
+text = "Default text"
+text_overrun_behavior = 1
+autowrap_mode = 3
+script = ExtResource("1_i0o2m")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

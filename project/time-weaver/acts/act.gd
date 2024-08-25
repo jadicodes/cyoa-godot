@@ -3,8 +3,8 @@ extends Resource
 
 @export var picture : CompressedTexture2D
 @export var text_queue : Array[String]
-@export var option1 : Act
-@export var option2 : Act
+@export var option_titles : Array[String]
+@export var options : Array[Act]
 
 
 func get_array_size() -> int:

@@ -24,7 +24,7 @@ window/stretch/mode="viewport"
 
 [gui]
 
-theme/custom_font="res://font/Kenney Pixel.ttf"
+theme/custom_font="res://common/font/Kenney Pixel.ttf"
 
 [input]
 

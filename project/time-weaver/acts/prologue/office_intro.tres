@@ -1,7 +1,10 @@
-[gd_resource type="Resource" script_class="Act" load_steps=2 format=3 uid="uid://c1puc11atrx6d"]
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://c1puc11atrx6d"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_5hqun"]
+[ext_resource type="Resource" uid="uid://b3iahtmgdbal4" path="res://acts/prologue/office_neutral.tres" id="1_rgyim"]
 
 [resource]
 script = ExtResource("1_5hqun")
-text_queue = Array[String](["I bet you're wondering why you're here.", "You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder.", "Yes, selves. There is one of you in every parallel universe. One of you witnessed a murder. We need to figure out who... and why... and how it happened."])
+text_queue = Array[String](["I bet you're wondering why you're here.", "You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder.", "Yes, selves. There is one of you in every parallel universe. One of you witnessed a murder. We need to figure out who... and why... and how it happened.", "You see, I can't have all of your selves in here because once I observe you, you all collapse into a single possibility.", "Since you have all collapsed into one being, your memories are all in there, too. We just have to observe one at a time.", "We have a tool to help with this called the \"Quantum Memory Leap.\"", "That explanation will have to do. Space and time are valuable, even if they are infinite. Are you ready?", "It's not actually a choice. We cannot afford to create more parallel possibilities during a murder investigation."])
+option_titles = Array[String](["Say \"I'm ready.\"", "Don't"])
+options = Array[ExtResource("1_5hqun")]([ExtResource("1_rgyim"), ExtResource("1_rgyim")])
