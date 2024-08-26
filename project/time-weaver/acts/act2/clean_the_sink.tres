@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://jxebiw7llf4l"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_wn2uv"]
+[ext_resource type="Texture2D" uid="uid://qorbsguexbnw" path="res://acts/act1/kitchen.png" id="2_u2xk3"]
+
+[resource]
+script = ExtResource("1_wn2uv")
+picture = ExtResource("2_u2xk3")
+text_queue = Array[String](["The sink is splattered with vomit, but otherwise empty besides a few glasses. You hear footsteps and a thud come from upstairs. Quentin comes back down first.", "\"I knew coming to Wesley's house was a bad idea. It's all gone downhill since he cheated on his girlfriend.\"", "\"No matter how much nostalgia is tied up in the five of us being friends, I just can't look at him the same.\""])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_wn2uv")]([])

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpskunpy87oqm"]
+[gd_scene load_steps=6 format=3 uid="uid://bpskunpy87oqm"]
 
 [ext_resource type="Script" path="res://stage/stage.gd" id="1_0wtrj"]
 [ext_resource type="PackedScene" uid="uid://clpbk8ntdtq1v" path="res://stage/textbox/textbox.tscn" id="1_axqlg"]
 [ext_resource type="Resource" uid="uid://c1puc11atrx6d" path="res://acts/prologue/office_intro.tres" id="2_qbxtf"]
+[ext_resource type="Script" path="res://stage/picture.gd" id="3_w25ua"]
 [ext_resource type="PackedScene" uid="uid://8g8lso6wmgm2" path="res://stage/options/options.tscn" id="4_uxll6"]
 
 [node name="Stage" type="Control"]
@@ -33,6 +34,7 @@ anchor_bottom = 1.0
 offset_bottom = -108.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_w25ua")
 
 [node name="Textbox" parent="." instance=ExtResource("1_axqlg")]
 unique_name_in_owner = true

@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3 uid="uid://clpbk8ntdtq1v"]
+
+[ext_resource type="Script" path="res://stage/textbox/textbox.gd" id="1_2vfnb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6w8rb"]
+bg_color = Color(0.831373, 0.827451, 0.819608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vesim"]
+bg_color = Color(0.160784, 0.117647, 0.101961, 1)
+
+[node name="Textbox" type="CanvasLayer"]
+script = ExtResource("1_2vfnb")
+
+[node name="TextboxContainer" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+clip_contents = true
+custom_minimum_size = Vector2(320, 108)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6w8rb")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="TextboxContainer/MarginContainer"]
+clip_contents = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vesim")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer/MarginContainer/Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="StartSymbol" type="Label" parent="TextboxContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "*"
+
+[node name="Label" type="Label" parent="TextboxContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 86)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.831373, 0.827451, 0.819608, 1)
+theme_override_font_sizes/font_size = 32
+autowrap_mode = 3
+clip_text = true
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="EndSymbol" type="Label" parent="TextboxContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 32
+text = "   "
