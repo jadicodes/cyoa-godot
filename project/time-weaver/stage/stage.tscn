@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bpskunpy87oqm"]
+[gd_scene load_steps=7 format=3 uid="uid://bpskunpy87oqm"]
 
 [ext_resource type="Script" path="res://stage/stage.gd" id="1_0wtrj"]
 [ext_resource type="PackedScene" uid="uid://clpbk8ntdtq1v" path="res://stage/textbox/textbox.tscn" id="1_axqlg"]
 [ext_resource type="Resource" uid="uid://c1puc11atrx6d" path="res://acts/prologue/office_intro.tres" id="2_qbxtf"]
+[ext_resource type="Texture2D" uid="uid://hx4iqa3rxtbp" path="res://acts/act2/kitchen/ac1_kitchen_quentin.png" id="3_rl03d"]
 [ext_resource type="Script" path="res://stage/picture.gd" id="3_w25ua"]
 [ext_resource type="PackedScene" uid="uid://8g8lso6wmgm2" path="res://stage/options/options.tscn" id="4_uxll6"]
 
@@ -34,6 +35,7 @@ anchor_bottom = 1.0
 offset_bottom = -108.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_rl03d")
 script = ExtResource("3_w25ua")
 
 [node name="Textbox" parent="." instance=ExtResource("1_axqlg")]
