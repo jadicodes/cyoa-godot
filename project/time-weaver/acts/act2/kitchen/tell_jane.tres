@@ -6,6 +6,6 @@
 [resource]
 script = ExtResource("1_u62lg")
 picture = ExtResource("2_hholk")
-text_queue = Array[String](["Jane is watching a horror movie. ", "\"I love horror movies. The gross, squishy sound effects help me forget that I was just listening to my boyfriend throw up in the sink.\"", "You laugh awkwardly, and then transition into telling her that Weston and Quentin took Bobby upstairs. You also mentioned that it's best that he stays here tonight."])
+text_queue = Array[String](["Jane is watching a horror movie. ", "\"I love horror movies. The gross, squishy sound effects help me forget that I was just listening to my boyfriend throw up in the sink.\"", "You laugh awkwardly, and then transition into telling her that Wesley and Quentin took Bobby upstairs. You also mention that it's best that he stays here tonight."])
 option_titles = Array[String]([])
 options = Array[ExtResource("1_u62lg")]([])
