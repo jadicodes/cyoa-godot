@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://jxebiw7llf4l"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_qya2c"]
+[ext_resource type="Texture2D" uid="uid://2vccq3v5w1oi" path="res://acts/act2/living_room/living_room.png" id="2_i8mqo"]
+[ext_resource type="Resource" uid="uid://c7nfsbpj1ybow" path="res://acts/act3/make_popcorn.tres" id="2_l4t8p"]
+[ext_resource type="Resource" uid="uid://p37pyvr12024" path="res://acts/act3/stay_and_watch.tres" id="3_wnbbk"]
+
+[resource]
+script = ExtResource("1_qya2c")
+picture = ExtResource("2_i8mqo")
+text_queue = Array[String](["You, stronger than Wesley by a large margin, carry Bobby to the living room.", "Jane and Quentin look up at you and instantly help lay him onto the couch.", "They greet you, making jokes that they did not expect to see you for the first time in months with a drunk man on your shoulders.", "\"I'm surprised you came at all after all the horrible Halloween pranks we pulled on you in the past,\" Jane says.", "Quentin speaks up, \"Yeah, we were horrible. I can't imagine doing those things to you again now. We're all adults here.\"", "Jane and Quentin crack smiles at each other.", "Wesley joins you in the living room. \"Well, I think it's about time for a scary movie.\"", "The group cheers. Jane works to get the movie started."])
+option_titles = Array[String](["Make everybody popcorn.", "Stay and watch the movie."])
+options = Array[ExtResource("1_qya2c")]([ExtResource("2_l4t8p"), ExtResource("3_wnbbk")])

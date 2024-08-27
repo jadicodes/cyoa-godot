@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Act" load_steps=2 format=3 uid="uid://d3o22x8wjidon"]
-
-[ext_resource type="Script" path="res://acts/act.gd" id="1_tucyc"]
-
-[resource]
-script = ExtResource("1_tucyc")
-text_queue = Array[String](["You offer her some words of comfort and then continue watching the movie.", "She turns to look at you again. \"And don't you think it's weird that Quentin keeps bringing up that cheating rumor about Wesley? I'm pretty sure it's not even true.\"", "Then, Wesley walks into the living room."])
-option_titles = Array[String]([])
-options = Array[ExtResource("1_tucyc")]([])

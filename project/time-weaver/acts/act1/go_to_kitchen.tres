@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://u4ito02bj82m"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_6wn16"]
-[ext_resource type="Resource" uid="uid://jxebiw7llf4l" path="res://acts/act2/kitchen/clean_the_sink.tres" id="2_dvmwq"]
-[ext_resource type="Resource" uid="uid://b0e1adhuqd6up" path="res://acts/act2/kitchen/tell_jane.tres" id="3_8557n"]
+[ext_resource type="Resource" uid="uid://b0e1adhuqd6up" path="res://acts/act2/kitchen/balance_bobby.tres" id="2_olnj2"]
+[ext_resource type="Resource" uid="uid://jxebiw7llf4l" path="res://acts/act2/kitchen/carry_bobby.tres" id="3_rh8rw"]
 [ext_resource type="Texture2D" uid="uid://d1htwm87h0rxl" path="res://acts/act1/act1_kitchen_WQ.png" id="4_enkon"]
 
 [resource]
 script = ExtResource("1_6wn16")
 picture = ExtResource("4_enkon")
-text_queue = Array[String](["Quentin and Wesley are holding up a very drunk Bobby. There appears to be puke in the sink.", "\"Bobby threw up in the sink, he's not in good shape. We're gonna take him upstairs,\" says Wesley.", "He continues, \"Jane is in the living room. You can tell her what happened to her boyfriend, or you can clean up the sink.\"", "\"I don't care which, just please do something. Ugh... gross.\""])
-option_titles = Array[String](["Tell Jane what happened.", "Clean the sink."])
-options = Array[ExtResource("1_6wn16")]([ExtResource("3_8557n"), ExtResource("2_dvmwq")])
+text_queue = Array[String](["Wesley is struggling to hold up a very drunk Bobby. There appears to be puke in the sink.", "\"Bobby threw up in the sink, he's not doing so hot. He's so drunk he could stab someone and not even realize it.\"", "\"I think he's on the verge of passing out. Either help me get him balanced or carry him yourself.\"", "\"I don't care which, just please do something. Ugh... gross. I just wanted to make popcorn.\""])
+option_titles = Array[String](["Help Wesley balance Bobby.", "Carry Bobby to the living room."])
+options = Array[ExtResource("1_6wn16")]([ExtResource("2_olnj2"), ExtResource("3_rh8rw")])

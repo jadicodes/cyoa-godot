@@ -1,11 +1,11 @@
 extends Control
 
+const _STARTING_ACT = preload("res://acts/prologue/office_neutral.tres")
 
 @export var _act : Act
 
 @onready var _picture = %Picture
 @onready var _textbox = %Textbox
-
 @onready var _options = %Options
 
 
@@ -15,7 +15,13 @@ func _ready() -> void:
 	_set_text_properties()
 
 
-# Set textbox data to data recieved from _act
+func _reset_game():
+		_act = _STARTING_ACT
+		_textbox.reset_queue_index()
+		_set_text_properties()
+
+
+# Set textbox and picture data to data recieved from _act
 
 func _set_text_properties() -> void:
 	_set_picture()
@@ -32,6 +38,11 @@ func _set_text() -> void:
 		_textbox.set_text(_act.text_queue[_textbox.get_queue_index()])
 
 
+func _set_picture() -> void:
+	if _act.picture != null:
+		_picture.texture = _act.picture
+
+
 # Manages signals recieved from textbox
 
 func _on_textbox_finished_current_text() -> void:
@@ -39,15 +50,11 @@ func _on_textbox_finished_current_text() -> void:
 
 
 func _on_textbox_finished_all_text() -> void:
-	_set_options_properties()
-	_textbox.hide_textbox()
-
-
-# Set picture data to picture stored in _act
-
-func _set_picture() -> void:
-	if _act.picture != null:
-		_picture.texture = _act.picture
+	if _act.is_game_over == true:
+		_reset_game()
+	else:
+		_set_options_properties()
+		_textbox.hide_textbox()
 
 
 # Set Options panel to have the proper titles and to take you to the right act

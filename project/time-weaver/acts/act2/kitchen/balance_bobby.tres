@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://b0e1adhuqd6up"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_efy4q"]
+[ext_resource type="Texture2D" uid="uid://qorbsguexbnw" path="res://acts/act2/kitchen/act1_kitchen.png" id="2_unucq"]
+
+[resource]
+script = ExtResource("1_efy4q")
+picture = ExtResource("2_unucq")
+text_queue = Array[String](["You lift up Bobby a little so that Wesley can get a better grip on him.", "They leave the kitchen together, and you distantly hear your other friends band together to help.", "To avoid being useless, you rinse the puke out of the sink."])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_efy4q")]([])

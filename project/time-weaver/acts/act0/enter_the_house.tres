@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://c58eyjxg5ek0"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_you7x"]
+[ext_resource type="Resource" uid="uid://cgdbe4m07crmr" path="res://acts/act1/go_to_living_room.tres" id="2_xcp4b"]
+[ext_resource type="Resource" uid="uid://u4ito02bj82m" path="res://acts/act1/go_to_kitchen.tres" id="3_m3bxj"]
+[ext_resource type="Texture2D" uid="uid://cnettyeass3k0" path="res://acts/act0/act0_hallway.png" id="4_e6xw6"]
+
+[resource]
+script = ExtResource("1_you7x")
+picture = ExtResource("4_e6xw6")
+text_queue = Array[String](["You enter Wesley's home. You hear chit chat coming from various places. To your left is a living room. To your right is a kitchen."])
+option_titles = Array[String](["Go to the living room.", "Go to the kitchen."])
+options = Array[ExtResource("1_you7x")]([ExtResource("2_xcp4b"), ExtResource("3_m3bxj")])

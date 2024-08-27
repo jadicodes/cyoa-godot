@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://b3iahtmgdbal4"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_7g1xb"]
-[ext_resource type="Resource" uid="uid://c58eyjxg5ek0" path="res://acts/act0/exit_the_bathroom.tres" id="1_qb3ld"]
+[ext_resource type="Resource" uid="uid://c58eyjxg5ek0" path="res://acts/act0/enter_the_house.tres" id="2_xocet"]
 
 [resource]
 script = ExtResource("1_7g1xb")
-text_queue = Array[String](["All right. Let's go in and see what happened that night."])
+text_queue = Array[String](["Well then. Let's go in and see what we can find."])
 option_titles = Array[String](["Enter memory"])
-options = Array[ExtResource("1_7g1xb")]([ExtResource("1_qb3ld")])
+options = Array[ExtResource("1_7g1xb")]([ExtResource("2_xocet")])

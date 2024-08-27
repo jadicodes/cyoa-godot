@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://hdma8fyprlh1"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_iyb2s"]
+[ext_resource type="Texture2D" uid="uid://dbu6v0ujfofut" path="res://acts/prologue/owl.png" id="2_uxtml"]
+
+[resource]
+script = ExtResource("1_iyb2s")
+picture = ExtResource("2_uxtml")
+text_queue = Array[String](["\"Hmm.\"", "\"Now we know where you died.\"", "\"But with all four of your friends in the room... it's hard to know much more than that.\"", "\"The pain was sharp? It was specifically in your stomach?\"", "\"Curious, indeed.\""])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_iyb2s")]([])
+is_game_over = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://c7nfsbpj1ybow"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_ngfs3"]
+[ext_resource type="Texture2D" uid="uid://qorbsguexbnw" path="res://acts/act2/kitchen/act1_kitchen.png" id="2_eu3yq"]
+
+[resource]
+script = ExtResource("1_ngfs3")
+picture = ExtResource("2_eu3yq")
+text_queue = Array[String](["You go into the kitchen. Luckily, Wesley left out the microwave popcorn.", "Suddenly, the whole house goes black, and everyone screams."])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_ngfs3")]([])
