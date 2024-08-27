@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://c1puc11atrx6d"]
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://c1puc11atrx6d"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_5hqun"]
 [ext_resource type="Resource" uid="uid://b3iahtmgdbal4" path="res://acts/prologue/office_neutral.tres" id="1_rgyim"]
+[ext_resource type="Texture2D" uid="uid://dbu6v0ujfofut" path="res://acts/prologue/owl.png" id="3_0ug3t"]
 
 [resource]
 script = ExtResource("1_5hqun")
-text_queue = Array[String](["I bet you're wondering why you're here.", "You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder.", "Yes, selves. There is one of you in every parallel universe. One of you witnessed a murder. We need to use your memories to figure out the details.", "When I observe you, all of your selves all collapse into a single possibility.", "Since you are all one being, your memories are all in there, too. We just have to observe thrm one at a time using our Quantum Memory Leap.", "That explanation will have to do. Space and time are valuable, even if they are infinite. Are you ready?", "It's not actually a choice. We cannot afford to create more parallel possibilities during a murder investigation."])
+picture = ExtResource("3_0ug3t")
+text_queue = Array[String](["I bet you're wondering why you're here.", "You are in the Interdimensional Justice Headquarters. One of your selves reported witnessing a murder.", "Yes, selves. There is one of you in every parallel universe. One of you witnessed a murder. We need to use your memories to figure out the details.", "When I observe you, all of your selves collapse into a single possibility.", "Since you are all one being, all of your memories are in there, too. We just have to observe them one at a time using our Quantum Memory Leap technology.", "That explanation will have to do. Space and time are valuable, even if they are infinite. Are you ready?", "It's not actually a choice. We cannot afford to create more parallel possibilities during a murder investigation."])
 option_titles = Array[String](["Say \"I'm ready.\"", "Don't say anything."])
 options = Array[ExtResource("1_5hqun")]([ExtResource("1_rgyim"), ExtResource("1_rgyim")])

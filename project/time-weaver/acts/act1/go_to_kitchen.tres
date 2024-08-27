@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://acts/act.gd" id="1_6wn16"]
 [ext_resource type="Resource" uid="uid://jxebiw7llf4l" path="res://acts/act2/clean_the_sink.tres" id="2_dvmwq"]
 [ext_resource type="Resource" uid="uid://b0e1adhuqd6up" path="res://acts/act2/tell_jane.tres" id="3_8557n"]
-[ext_resource type="Texture2D" uid="uid://d1htwm87h0rxl" path="res://acts/act1/act1_kitchen.png" id="3_l2xb2"]
+[ext_resource type="Texture2D" uid="uid://d1htwm87h0rxl" path="res://acts/act1/act1_kitchen_WQ.png" id="3_l2xb2"]
 
 [resource]
 script = ExtResource("1_6wn16")
