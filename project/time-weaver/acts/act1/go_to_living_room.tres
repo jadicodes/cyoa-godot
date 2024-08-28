@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1_lvrpf")
 picture = ExtResource("4_wpp70")
-text_queue = Array[String](["Jane and Quentin are chatting in the living room when you walk in. They both look up at you and smile a little awkardly.", "\"Hey! Glad you showed up! We were just about to start a movie-\"", "Jane was interupted by a loud thud that came from the kitchen.", "\"Guys? Everything okay?\" Quentin shouts towards the kitchen.", "\"I dropped Bobby! He passed out!\" Wesley shouted in reply. "])
+text_queue = Array[String](["Jane and Quentin are chatting in the living room when you walk in. They both look up at you and smile a little awkwardly.", "\"Hey! Glad you showed up! We were just about to start a movie-\"", "Jane was interupted by a loud thud that came from the kitchen.", "\"Guys? Everything okay?\" Quentin shouts towards the kitchen.", "\"I dropped Bobby! He passed out!\" Wesley shouted in reply. "])
 option_titles = Array[String](["Run to the kitchen.", "Stay in the living room."])
 options = Array[ExtResource("1_lvrpf")]([ExtResource("2_732rc"), ExtResource("3_aukis")])
 is_game_over = false

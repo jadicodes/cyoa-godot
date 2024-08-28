@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://b0e1adhuqd6up"]
+[gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://b0e1adhuqd6up"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_efy4q"]
+[ext_resource type="Resource" uid="uid://6w85b6a7r1r" path="res://acts/act3/clean_sink/go_to_the_living_room.tres" id="2_kbix5"]
 [ext_resource type="Texture2D" uid="uid://bq2ieq3utys28" path="res://acts/pictures/act1_kitchen.png" id="2_nkqkn"]
+[ext_resource type="Resource" uid="uid://bxe65rdxqu1sw" path="res://acts/act3/clean_sink/be_nosy.tres" id="3_wlvtx"]
 
 [resource]
 script = ExtResource("1_efy4q")
 picture = ExtResource("2_nkqkn")
-text_queue = Array[String](["You lift up Bobby a little so that Wesley can get a better grip on him.", "They leave the kitchen together, and you distantly hear your other friends band together to help.", "To avoid being useless, you rinse the puke out of the sink."])
-option_titles = Array[String]([])
-options = Array[ExtResource("1_efy4q")]([])
+text_queue = Array[String](["You lift up Bobby a little so that Wesley can get a better grip on him.", "They leave the kitchen together, and you distantly hear your other friends band together to help.", "To avoid being useless, you rinse the puke out of the sink.", "The faucet leaking water makes you need to use the restroom. The drive was over two hours and you didn't make a single bathroom stop! ", "You should probably ask first, but you remember Wesley having a bathroom in his bedroom."])
+option_titles = Array[String](["Ask Wesley first.", "Go without permission."])
+options = Array[ExtResource("1_efy4q")]([ExtResource("2_kbix5"), ExtResource("3_wlvtx")])
 is_game_over = false

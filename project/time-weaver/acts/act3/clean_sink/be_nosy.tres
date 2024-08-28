@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://bxe65rdxqu1sw"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_r8qqd"]
+[ext_resource type="Resource" uid="uid://72nghyik4cop" path="res://acts/prologue/office_no_death.tres" id="2_ddxux"]
+[ext_resource type="Texture2D" uid="uid://ndjhok1l6rfg" path="res://acts/pictures/bedroom.png" id="3_ymjkx"]
+
+[resource]
+script = ExtResource("1_r8qqd")
+picture = ExtResource("3_ymjkx")
+text_queue = Array[String](["You peer into Wesley's bedroom. You were wrong. There is no bathroom in here.", "The only thing you notice is a perfectly stocked bookshelf.", "Almost perfectly stocked. There is exactly one book missing.", "The shleves seem to be organized alphabetically. The missing book is between \"Hempseeds and their Benefits\" and \"Hyphens: A How To on How-To Use Them.\"", "As you finish reading some of the other interesting titles, the power in the house goes out.", "You hear some screaming from downstairs.", "Soon enough, the power comes back on. Wesley walks into the room and asks why you're in here.", "You tell him the truth. That you were looking for the bathroom."])
+option_titles = Array[String](["..."])
+options = Array[ExtResource("1_r8qqd")]([ExtResource("2_ddxux")])
+is_game_over = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://6w85b6a7r1r"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_yhrv4"]
+[ext_resource type="Resource" uid="uid://72nghyik4cop" path="res://acts/prologue/office_no_death.tres" id="2_ssxvi"]
+[ext_resource type="Texture2D" uid="uid://cyoc2jlm4mce1" path="res://acts/pictures/living_room_WQBJ.png" id="3_llmwu"]
+
+[resource]
+script = ExtResource("1_yhrv4")
+picture = ExtResource("3_llmwu")
+text_queue = Array[String](["In the living room, your friends are all gathered around Bobby.", "You begin to ask if you can use the restroom, but Quentin starts asking you about your life, and Jane starts talking about her job.", "Wesley tries to walk past you towards the kitchen, but before he can, the lights go out in the house.", "Everybody screams, including you.", "The lights turn back on. Wesley stopped trying to go towards the kitchen. Everyone else is laughing.", "\"You know how it is. Can't have a friend reunion without a cheeky prank!\" Jane says excitedly."])
+option_titles = Array[String](["..."])
+options = Array[ExtResource("1_yhrv4")]([ExtResource("2_ssxvi")])
+is_game_over = false

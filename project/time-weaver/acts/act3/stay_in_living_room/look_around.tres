@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://c43oxfhwgdy8v"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_b5to5"]
+[ext_resource type="Texture2D" uid="uid://b5x4ti67gdl8n" path="res://acts/pictures/living_room.png" id="2_8mfm2"]
+[ext_resource type="Resource" uid="uid://72nghyik4cop" path="res://acts/prologue/office_no_death.tres" id="2_vb43g"]
+
+[resource]
+script = ExtResource("1_b5to5")
+picture = ExtResource("2_8mfm2")
+text_queue = Array[String](["You stand up and walk around.", "Out of the corner of your eye, you find a book called \"How to Hypothetically Get Away with Murder.\"", "Strange.", "This is Wesley's house, but there are no bookshelves in here. Maybe it fell out of someone's bag?", "Before you can think too much about it, the lights in the house go out. It's completely dark.", "Your friends in the other room scream. You drop the book out of fear.", "The lights in the room turn back on. Your friends poke their heads through the doorway, laughing. \"Everyone's safe, it was a prank!\"", "You look at the fallen book, and it is open to a chapter about not being seen."])
+option_titles = Array[String](["..."])
+options = Array[ExtResource("1_b5to5")]([ExtResource("2_vb43g")])
+is_game_over = false
