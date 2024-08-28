@@ -3,11 +3,12 @@
 [ext_resource type="Script" path="res://acts/act.gd" id="1_6wn16"]
 [ext_resource type="Resource" uid="uid://b0e1adhuqd6up" path="res://acts/act2/kitchen/balance_bobby.tres" id="2_olnj2"]
 [ext_resource type="Resource" uid="uid://jxebiw7llf4l" path="res://acts/act2/kitchen/carry_bobby.tres" id="3_rh8rw"]
-[ext_resource type="Texture2D" uid="uid://d1htwm87h0rxl" path="res://acts/act1/act1_kitchen_WQ.png" id="4_enkon"]
+[ext_resource type="Texture2D" uid="uid://dwjifcewdnbvy" path="res://acts/pictures/kitchen_WB.png" id="4_31tjx"]
 
 [resource]
 script = ExtResource("1_6wn16")
-picture = ExtResource("4_enkon")
+picture = ExtResource("4_31tjx")
 text_queue = Array[String](["Wesley is struggling to hold up a very drunk Bobby. There appears to be puke in the sink.", "\"Bobby threw up in the sink, he's not doing so hot. He's so drunk he could stab someone and not even realize it.\"", "\"I think he's on the verge of passing out. Either help me get him balanced or carry him yourself.\"", "\"I don't care which, just please do something. Ugh... gross. I just wanted to make popcorn.\""])
 option_titles = Array[String](["Help Wesley balance Bobby.", "Carry Bobby to the living room."])
 options = Array[ExtResource("1_6wn16")]([ExtResource("2_olnj2"), ExtResource("3_rh8rw")])
+is_game_over = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://c7nfsbpj1ybow"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_taqow"]
+[ext_resource type="Resource" uid="uid://72nghyik4cop" path="res://acts/prologue/office_no_death.tres" id="2_ucryy"]
+[ext_resource type="Texture2D" uid="uid://bbm3hf6mmvqie" path="res://acts/pictures/kitchen_no_knife.png" id="3_fohhn"]
+
+[resource]
+script = ExtResource("1_taqow")
+picture = ExtResource("3_fohhn")
+text_queue = Array[String](["You go into the kitchen. Luckily, Wesley left out the microwave popcorn.", "Suddenly, the whole house goes black, and everyone screams.", "Your entire body tenses up. You're in this room alone, yet it feels like someone could be right behind you.", "Luckily, no one was, and the lights turn back on. You hear footsteps of your friends in the hallway.", "\"Surprise!\" Jane yells.", "\"No one's hurt. Just felt like playing a prank for old times sake. Can't have a reunion without one,\" says Quentin.", "Wesley doesn't say anything.", "\"We assumed you would be in the room with us when it happened, but this was fine, too,\" Quentin says.", "\"Yeah, probably for the best,\" Jane says."])
+option_titles = Array[String](["..."])
+options = Array[ExtResource("1_taqow")]([ExtResource("2_ucryy")])
+is_game_over = false

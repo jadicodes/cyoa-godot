@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://72nghyik4cop"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_s4tsr"]
+[ext_resource type="Texture2D" uid="uid://dbu6v0ujfofut" path="res://acts/pictures/owl.png" id="2_d753q"]
+
+[resource]
+script = ExtResource("1_s4tsr")
+picture = ExtResource("2_d753q")
+text_queue = Array[String](["You did not die there. Good for you.", "The clues in these paths might be subtle. We must stay vigilante in our search."])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_s4tsr")]([])
+is_game_over = true

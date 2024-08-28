@@ -1,11 +1,14 @@
-[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://cgdbe4m07crmr"]
+[gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://cgdbe4m07crmr"]
 
 [ext_resource type="Script" path="res://acts/act.gd" id="1_lvrpf"]
-[ext_resource type="Texture2D" uid="uid://2vccq3v5w1oi" path="res://acts/act2/living_room/living_room.png" id="4_olavo"]
+[ext_resource type="Resource" uid="uid://crrmlufmtxe4j" path="res://acts/act2/living_room/run_to_kitchen.tres" id="2_732rc"]
+[ext_resource type="Resource" uid="uid://sd2r7nsu15dv" path="res://acts/act2/living_room/stay_in_living_room.tres" id="3_aukis"]
+[ext_resource type="Texture2D" uid="uid://fyaut5hgmk3e" path="res://acts/pictures/living_room_QJ.png" id="4_wpp70"]
 
 [resource]
 script = ExtResource("1_lvrpf")
-picture = ExtResource("4_olavo")
-text_queue = Array[String](["Jane is watching a horror movie. She looks at you as you walk in.", "\"I love horror movies. The gross, squishy sound effects help me forget that I was just listening to my boyfriend throw up in the kitchen sink.\"", "She sighs. \"Sometimes I feel like he is drinking his life... OUR life away. It makes me so angry.\"", "\"I can hear their footsteps upstairs. I bet they're putting him to bed. Maybe they'll even forget to roll him on his side.\"", "\"Joking.\"", "\"It's just been hard. I haven't eaten enough today, either, and you know how that makes me. The movie is definitely helping, though.\""])
-option_titles = Array[String]([])
-options = Array[ExtResource("1_lvrpf")]([])
+picture = ExtResource("4_wpp70")
+text_queue = Array[String](["Jane and Quentin are chatting in the living room when you walk in. They both look up at you and smile a little awkardly.", "\"Hey! Glad you showed up! We were just about to start a movie-\"", "Jane was interupted by a loud thud that came from the kitchen.", "\"Guys? Everything okay?\" Quentin shouts towards the kitchen.", "\"I dropped Bobby! He passed out!\" Wesley shouted in reply. "])
+option_titles = Array[String](["Run to the kitchen.", "Stay in the living room."])
+options = Array[ExtResource("1_lvrpf")]([ExtResource("2_732rc"), ExtResource("3_aukis")])
+is_game_over = false

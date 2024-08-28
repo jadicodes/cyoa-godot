@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://fh8ntggiem0e"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_c25lc"]
+[ext_resource type="Resource" uid="uid://hdma8fyprlh1" path="res://acts/prologue/office_you_died.tres" id="2_hwd82"]
+[ext_resource type="Texture2D" uid="uid://dsjdonces01eu" path="res://acts/pictures/kitchen_WQBJ.png" id="3_xyys1"]
+
+[resource]
+script = ExtResource("1_c25lc")
+picture = ExtResource("3_xyys1")
+text_queue = Array[String](["You ignore the bickering, even though you have a feeling it involves you.", "You bend down and attempt to grab Bobby by the shoulders. If you can pull him into the living room, at least it'll be a little comfier.", "It's difficult, but you get him to move a few inches.", "Your friends keep throwing rabid whispers at each other, seemingly unbothered by your struggle to help your friend.", "Suddenly, the house goes completely dark. Jane yelps, but your friends are otherwise silent.", "You are jolted upright by someone grabbing your arm. You almost speak, but are interupted by a stabbing pain in your stomach.", "You are dying."])
+option_titles = Array[String](["Die."])
+options = Array[ExtResource("1_c25lc")]([ExtResource("2_hwd82")])
+is_game_over = false

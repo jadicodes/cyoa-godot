@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://p37pyvr12024"]
 
-[ext_resource type="Script" path="res://acts/act.gd" id="1_70al5"]
-[ext_resource type="Texture2D" uid="uid://2vccq3v5w1oi" path="res://acts/act2/living_room/living_room.png" id="2_8wm15"]
-[ext_resource type="Resource" uid="uid://hdma8fyprlh1" path="res://acts/prologue/office_you_died.tres" id="2_atrho"]
+[ext_resource type="Script" path="res://acts/act.gd" id="1_hrc8u"]
+[ext_resource type="Resource" uid="uid://hdma8fyprlh1" path="res://acts/prologue/office_you_died.tres" id="2_1hn4a"]
+[ext_resource type="Texture2D" uid="uid://cyoc2jlm4mce1" path="res://acts/pictures/living_room_WQBJ.png" id="3_tsq1f"]
 
 [resource]
-script = ExtResource("1_70al5")
-picture = ExtResource("2_8wm15")
+script = ExtResource("1_hrc8u")
+picture = ExtResource("3_tsq1f")
 text_queue = Array[String](["You hang tight, even though popcorn sounds pretty good right now.", "Jane gets the movie going, but it only plays for a few seconds before the entire house turns black.", "Everybody screams.", "You feel a sharp pain erupt from your stomach.", "You are dying."])
 option_titles = Array[String](["Die."])
-options = Array[ExtResource("1_70al5")]([ExtResource("2_atrho")])
+options = Array[ExtResource("1_hrc8u")]([ExtResource("2_1hn4a")])
 is_game_over = false

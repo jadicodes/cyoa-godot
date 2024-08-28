@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_7g1xb")
 text_queue = Array[String](["Well then. Let's go in and see what we can find."])
-option_titles = Array[String](["Enter memory"])
+option_titles = Array[String](["Use Quantum Memory Leap."])
 options = Array[ExtResource("1_7g1xb")]([ExtResource("2_xocet")])
+is_game_over = false

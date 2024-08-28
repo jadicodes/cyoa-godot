@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Act" load_steps=4 format=3 uid="uid://b8vakxhwigqaq"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_q75ta"]
+[ext_resource type="Resource" uid="uid://hdma8fyprlh1" path="res://acts/prologue/office_you_died.tres" id="2_5v3cq"]
+[ext_resource type="Texture2D" uid="uid://dsjdonces01eu" path="res://acts/pictures/kitchen_WQBJ.png" id="3_vby2q"]
+
+[resource]
+script = ExtResource("1_q75ta")
+picture = ExtResource("3_vby2q")
+text_queue = Array[String](["\"Oh, it's nothing-\" Quentin starts.", "Jane yells, \"Come on, Quentin! All the lights in the house are on a timer and they're going to turn off soon.\"", "\"When that happens, we were all going to yell really loud to scare you. It was stupid. Our friend is LITERALLY hurt and passed out,\" she says.", "With perfect timing, the house goes dark, but nobody screams. ", "Except for your body, which screams with pain. There is a sharp feeling in your stomach. ", "You are dying."])
+option_titles = Array[String](["Die."])
+options = Array[ExtResource("1_q75ta")]([ExtResource("2_5v3cq")])
+is_game_over = false

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Act" load_steps=5 format=3 uid="uid://crrmlufmtxe4j"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_vw86q"]
+[ext_resource type="Resource" uid="uid://b8vakxhwigqaq" path="res://acts/act3/run_to_kitchen/ask_about_prank.tres" id="2_swnqa"]
+[ext_resource type="Resource" uid="uid://fh8ntggiem0e" path="res://acts/act3/run_to_kitchen/try_and_pick_up.tres" id="3_4amo2"]
+[ext_resource type="Texture2D" uid="uid://dsjdonces01eu" path="res://acts/pictures/kitchen_WQBJ.png" id="4_4pq44"]
+
+[resource]
+script = ExtResource("1_vw86q")
+picture = ExtResource("4_4pq44")
+text_queue = Array[String](["Jane and Quinten run into the kitchen with you. Bobby looks uncomfortably splayed across the kitchen floor.", "\"Sorry, everyone, I just wasn't strong enough to catch him on my own,\" Weston says.", "Jane replies, \"It's fine, Wesley, I'm more concerned about the prank, we should stop it-\"", "She is interrupted by Quentin, \"Jane, it's fine, it's only a few seconds.\" Wesley glares at her.", "\"We need to focus on helping Bobby, not being mean to our friend!\" she rebutes."])
+option_titles = Array[String](["Ask about the prank.", "Try and pick up Bobby."])
+options = Array[ExtResource("1_vw86q")]([ExtResource("2_swnqa"), ExtResource("3_4amo2")])
+is_game_over = false

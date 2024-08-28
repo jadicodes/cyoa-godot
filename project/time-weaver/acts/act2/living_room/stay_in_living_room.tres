@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Act" load_steps=3 format=3 uid="uid://sd2r7nsu15dv"]
+
+[ext_resource type="Script" path="res://acts/act.gd" id="1_rk8yk"]
+[ext_resource type="Texture2D" uid="uid://2vccq3v5w1oi" path="res://acts/act2/living_room/living_room.png" id="2_b15fp"]
+
+[resource]
+script = ExtResource("1_rk8yk")
+picture = ExtResource("2_b15fp")
+text_queue = Array[String](["You stay in the living room while everyone else goes to help your friend.", "It reminds you of a time that they left you at a Halloween party all on your own, even though you hate parties...", "all in the name of a prank. You never did think your friends were very funny.", "You feel for a second like you are watching yourself in the third person.", "Maybe I should get out of here? Maybe I should kill my friends before one of them kills me?", "You shake off that weird, intrusive thought. You aren't watching yourself, that makes no sense. Surely there is something better to do than sit here alone."])
+option_titles = Array[String]([])
+options = Array[ExtResource("1_rk8yk")]([])
+is_game_over = false
