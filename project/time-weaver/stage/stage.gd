@@ -15,10 +15,12 @@ func _ready() -> void:
 	_set_text_properties()
 
 
+# Reset the game when an ending is reached
+
 func _reset_game():
-		_act = _STARTING_ACT
-		_textbox.reset_queue_index()
-		_set_text_properties()
+	_act = _STARTING_ACT
+	_textbox.reset_queue_index()
+	_set_text_properties()
 
 
 # Set textbox and picture data to data recieved from _act
