@@ -14,7 +14,7 @@ Use ENTER or SPACE to scroll through the text. Use LEFT MOUSE BUTTON and MOUSE C
 *It may not work correctly on MacOS on Chromium browsers. [Godot 4's HTML5 exports currently cannot run on macOS due to upstream bugs with SharedArrayBuffer and WebGL 2.0.](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html). Non-Chromium browsers like Firefox seem to work on both Mac and Windows.
 
 
-## Mechanics
+## Nodes and Transitions
 To create story nodes, I created an "Acts" Resource. Resources are data containers specific to Godot. For the base Resource, I wrote a script that exports the following variables: 
 - a picture
 - a text queue (an array of Strings)
